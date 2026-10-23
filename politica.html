@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Fidus</title>
+<meta name="description" content="Como o Fidus trata os seus dados: o que fica no seu computador, o que sai quando você usa um serviço e quais são os seus direitos (LGPD).">
+<link rel="canonical" href="https://fidus.pythondeaaz.com.br/politica.html">
+<link rel="icon" type="image/svg+xml" href="assets/fidus-icone.svg">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="assets/fidus-icone.svg" alt="" width="36" height="36">Fidus</a>
+    <nav class="main" aria-label="Principal">
+      <a href="./">Início</a>
+      <a href="politica.html" aria-current="page">Privacidade</a>
+      <a href="termos.html">Termos</a>
+      <a href="https://github.com/tiagoluizrs/fidus">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <article class="doc">
+      <h1>Política de Privacidade</h1>
+      <p class="meta">Última atualização: 23 de outubro de 2026</p>
+
+      <p>O Fidus é um assistente de voz de código aberto que roda <strong>no seu computador</strong>. Esta página explica quais dados ele usa e para onde vão. O projeto é pessoal e sem fins comerciais.</p>
+
+      <h2>1. O que fica só no seu computador</h2>
+      <ul>
+        <li>Memória, histórico de conversas, personagens, configurações e o registro de ações.</li>
+        <li>A sua voz e a transcrição: o reconhecimento de fala roda localmente.</li>
+        <li>Chaves e tokens (Anthropic, Slack, Google, ElevenLabs), guardados no Gerenciador de Credenciais do Windows.</li>
+        <li>O Fidus <strong>não tem telemetria</strong>: não envia estatísticas de uso nem relatórios de erro a ninguém.</li>
+      </ul>
+
+      <h2>2. O que sai do computador, e só quando você usa</h2>
+      <ul>
+        <li><strong>Modelo de IA na nuvem (Claude, da Anthropic):</strong> o seu pedido e os trechos necessários para respondê-lo (por exemplo, o conteúdo de um e-mail que você pediu para resumir). Com o modelo <strong>local (Ollama)</strong> nada sai da máquina.</li>
+        <li><strong>Voz na nuvem (ElevenLabs), opcional:</strong> o texto que o assistente fala e, se você criar a “sua própria voz”, a gravação feita com o seu consentimento. A conta no serviço é sua.</li>
+        <li><strong>Google (Gmail e Agenda), opcional:</strong> o Fidus pede acesso à <em>sua</em> conta pelo login do Google (OAuth) e guarda apenas um token de renovação no seu computador. Lê e-mails e eventos para atender aos seus pedidos e só cria rascunhos ou altera eventos se você liberar, com confirmação a cada ação. O Fidus nunca envia e-mails sozinho.</li>
+        <li><strong>Slack, opcional:</strong> usa o token que você fornece, para ler os canais que você permitir e responder, com a sua confirmação.</li>
+      </ul>
+
+      <h2>3. Informações recebidas das APIs do Google</h2>
+      <p>O uso e a transferência, para qualquer outro aplicativo, das informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+      <ul>
+        <li>Os dados do Gmail e da Agenda são usados <strong>apenas</strong> para atender aos pedidos que você faz dentro do Fidus.</li>
+        <li>Não são vendidos, não são compartilhados com terceiros, não são usados para publicidade e não são usados para treinar modelos de IA.</li>
+        <li>Ninguém, além de você, lê esses dados: eles são processados no seu computador e, quando necessário, enviados ao modelo de IA que <em>você</em> escolheu (seção 2) somente para produzir a resposta.</li>
+        <li>O acesso pode ser desconectado a qualquer momento no Fidus e revogado em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      </ul>
+
+      <h2>4. Este site</h2>
+      <p>Este site é estático e <strong>não usa cookies, rastreadores nem estatísticas</strong>. Ele é hospedado no GitHub Pages, que pode registrar dados técnicos de acesso (como o endereço IP) segundo a <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement">política de privacidade do GitHub</a>.</p>
+
+      <h2>5. Seus direitos (LGPD)</h2>
+      <p>Em Configurações &gt; Privacidade e Memória você pode ver, editar, exportar e apagar o que o Fidus guarda, e desconectar qualquer conta. Desconectar o Google remove o token do seu computador. Desinstalar o Fidus <strong>não</strong> apaga os seus dados (ficam em <code>%APPDATA%\Fidus</code>); use “Apagar tudo” antes, se quiser. Você também pode pedir esclarecimentos sobre o tratamento dos seus dados pelo contato abaixo.</p>
+
+      <h2>6. Segurança</h2>
+      <p>Conteúdo de e-mails e mensagens é tratado sempre como dado, nunca como ordem. Ações de risco pedem a sua confirmação, e as regras de permissão ficam fora do modelo de IA. As chaves ficam no cofre do Windows, nunca em arquivos do projeto.</p>
+
+      <h2>7. Crianças</h2>
+      <p>O Fidus não é direcionado a crianças e não coleta dados de menores de forma intencional.</p>
+
+      <h2>8. Mudanças nesta política</h2>
+      <p>Esta política pode mudar junto com o projeto. A versão vigente é sempre a desta página, com a data de atualização no topo.</p>
+
+      <h2>9. Contato</h2>
+      <p>Dúvidas ou pedidos sobre privacidade: abra uma <em>issue</em> em <a href="https://github.com/tiagoluizrs/fidus/issues">github.com/tiagoluizrs/fidus/issues</a>.</p>
+    </article>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Fidus · projeto pessoal de código aberto</span>
+    <span><a href="./">Início</a> · <a href="termos.html">Termos de Uso</a> · <a href="https://github.com/tiagoluizrs/fidus/issues">Contato</a></span>
+  </div>
+</footer>
+</body>
+</html>
